@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
-
+import Head from 'next/head';
 function Page() {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -37,9 +37,11 @@ function Page() {
   }
 
   return (
+    <>    
     <div className="mx-auto max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-20">
       <h2 className="w-full h-16 pt-2 bg-gray-700 text-white font-mono text-2xl font-light leading-normal text-center rounded-t-lg">
         ✺ TO-DO LIST ✺
+        <p className="text-[10px] text-gray-400 " >Created by Khadim Ali</p>
       </h2>
       <div className="w-full">
         <ul>
@@ -90,6 +92,7 @@ function Page() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
