@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 
-function page() {
+function Page() {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -93,4 +93,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
